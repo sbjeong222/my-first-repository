@@ -10,6 +10,7 @@ const Say = () => {
       <button onClick={onClickEnter}>입장</button>
       <button onClick={onClickLeave}>퇴장</button>
       <h1>{message}</h1>
+      <h2>test</h2>
     </div>
   );
 };
