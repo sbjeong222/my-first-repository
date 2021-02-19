@@ -1,9 +1,10 @@
 import React from "react";
 import Counter from "./Counter";
 import Say from "./Say";
-import Login from "./Login";
+import Info from "./Info";
+
 const App = () => {
-    return <Login />;
+    return <Info />;
 };
 
 export default App;
