@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+//import "./Welcome.js";
+
+function Welcome(props) {
+    return <h1>hello, {props.name}</h1>;
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Welcome name="jaeyoon" /> 
+        </div>
+    );
 }
 
 export default App;
+/*왜 컴포넌트 받아왓는데 안되는거지?*/
