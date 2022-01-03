@@ -2,8 +2,19 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-    const name = "뤼액트";
-    return <div>{name === "리액트" && <h1>리액트 입니다!</h1>}</div>;
+    const name = "리액트";
+
+    return (
+        <div
+            style={{
+                backgroundColor: "black",
+                color: "blue",
+                fontSize: "50px",
+            }}
+        >
+            {name}
+        </div>
+    );
 }
 
 export default App;
