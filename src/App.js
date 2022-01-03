@@ -1,18 +1,17 @@
 import logo from "./logo.svg";
 import "./App.css";
-//import "./Welcome.js";
-
-function Welcome(props) {
-    return <h1>hello, {props.name}</h1>;
-}
 
 function App() {
+    const name = "리액트";
     return (
-        <div className="App">
-            <Welcome name="jaeyoon" /> 
+        <div>
+            {name === "리액트" ? (
+                <h1>리액트 입니다.</h1>
+            ) : (
+                <h2>리액트가 아닙니다.</h2>
+            )}
         </div>
     );
 }
 
 export default App;
-/*왜 컴포넌트 받아왓는데 안되는거지?*/
