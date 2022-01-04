@@ -12,7 +12,7 @@ import MyComponent from "./MyComponent";
 
 // export default App;
 
-//클래스형 컴포넌트.
+// 클래스형 컴포넌트.
 // class App extends Component {
 //     render() {
 //         const name = "react";
@@ -21,8 +21,13 @@ import MyComponent from "./MyComponent";
 // }
 
 // export default App;
+
 const App = () => {
-    return <MyComponent>리액트</MyComponent>;
+    return (
+        <MyComponent name="리액트" favoriteNumber={2}>
+            리액트
+        </MyComponent>
+    );
 };
 
 export default App;

@@ -1,18 +1,29 @@
-import React from "react";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-const MyComponent = (props) => {
-    return (
-        <div>
-            나의 새로운 이름은 : {props.name} 입니다.
-            <br />
-            children 값은 {props.children}
-        </div>
-    );
-};
+import React, { Component } from "react";
 
-//MyComponent.defaultProps 는 props가 없을때 기본적으로 보여줄 값을 설정함.
-MyComponent.defaultProps = {
-    name: "기본이름",
-};
+class MyComponent extends Component {
+    static defaultProps = {
+        //class 내부에서 defaultProps와 propTypes를 설정할여 협업 시 개발 능률을 올릴 수 있음.
+        name: "기본이름",
+    };
+    static propTypes = {
+        name: PropTypes.string,
+        favoriteNumber: PropTypes.number.isRequired,
+    };
+    render() {
+        const { name, children, favoriteNumber } = this.props;
+        return (
+            <div>
+                나의 새로운 이름은 : {name} 입니다.
+                <br />
+                children 값은 : {children} 입니다.
+                <br />
+                제가 좋아하는 숫자는 : {favoriteNumber} 입니다.
+            </div>
+        );
+    }
+}
 
 export default MyComponent;
