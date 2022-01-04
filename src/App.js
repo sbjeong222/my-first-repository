@@ -22,7 +22,7 @@ import MyComponent from "./MyComponent";
 
 // export default App;
 const App = () => {
-    return <MyComponent />;
+    return <MyComponent>리액트</MyComponent>;
 };
 
 export default App;
