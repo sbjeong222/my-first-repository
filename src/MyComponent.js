@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import React, { Component } from "react";
-
 class MyComponent extends Component {
     static defaultProps = {
         //class 내부에서 defaultProps와 propTypes를 설정할여 협업 시 개발 능률을 올릴 수 있음.
