@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
-import Counter from "./Counter";
+
+import Say from "./Say";
 //함수형 컴포넌트.
 // function App() {
 //     const name = "리액트";
@@ -21,7 +22,7 @@ import Counter from "./Counter";
 // export default App;
 
 const App = () => {
-    return <Counter />;
+    return <Say />;
 };
 
 export default App;
