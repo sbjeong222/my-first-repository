@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
+import EventPractice from "./EventPractice";
 
-import Say from "./Say";
 //함수형 컴포넌트.
 // function App() {
 //     const name = "리액트";
@@ -22,7 +22,7 @@ import Say from "./Say";
 // export default App;
 
 const App = () => {
-    return <Say />;
+    return <EventPractice />;
 };
 
 export default App;
